@@ -4,14 +4,17 @@ from rest_framework.response import Response
 from .models import Author, Book
 from .serializers import AuthorSerializer, BookSerializer
 
+
 class AuthorListCreateView(generics.ListCreateAPIView):
     queryset = Author.objects.all()
     serializer_class = AuthorSerializer
+
 
 class AuthorDetailsView(generics.RetrieveAPIView):
     queryset = Author.objects.all()
     serializer_class = AuthorSerializer
     lookup_field = 'id'
+
 
 class BookListCreateView(generics.ListCreateAPIView):
     queryset = Book.objects.all()
@@ -27,6 +30,7 @@ class BookListCreateView(generics.ListCreateAPIView):
         if author.books.count() >= 5:
             return Response({'error': 'Author cannot have more than 5 books.'}, status=status.HTTP_400_BAD_REQUEST)
         return super().create(request, *args, **kwargs)
+
 
 class BookDetailsView(generics.RetrieveAPIView):
     queryset = Book.objects.all()
