@@ -1,15 +1,15 @@
 Author_Book                                                                                                                              
-Project name Library                                                                                                                                 
+Project name - Library                                                                                                                                 
 Api - This Django app provides a REST API for managing Author and Book in the Library platform                                                                             
 
 INSTALLATION                                                                                
 
-Clone the repository: https://github.com/sharuhaasan/Author_Book                                                                
-Navigate to the project directory: cd Author_Book                                                                                   
-Create a virtual environment: python3 -m venv venv                                                                           
-Activate the virtual environment: venv\Scripts\activate                                                                                                  
-Install the dependencies: pip install -r requirements.txt                                                                                              
-Set up the database: python manage.py makemigrations and python manage.py migrate                                                                            
+Clone the repository:   https://github.com/sharuhaasan/Author_Book                                                                                                            
+Navigate to the project directory:   cd Author_Book                                                                                   
+Create a virtual environment:   python3 -m venv venv                                                                           
+Activate the virtual environment:   venv\Scripts\activate                                                                                                  
+Install the dependencies:   pip install -r requirements.txt                                                                                              
+Set up the database:   python manage.py makemigrations and python manage.py migrate                                                                            
 
 USAGE
 
