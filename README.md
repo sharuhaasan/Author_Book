@@ -20,7 +20,7 @@ views.py
 urls.py (Api)                                                                                                                     
 urls.py (Library)                                                                                                          
 
-Start the development server: python manage.py runserver                                                                         
+Start the development server:          python manage.py runserver                                                                         
 
 Access the API endpoints:
 
