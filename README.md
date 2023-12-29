@@ -37,6 +37,22 @@ SAMPLE API
 
 http://127.0.0.1:8000/api/authors/ -- (POST) To create new author                                                                                     
 http://127.0.0.1:8000/api/books/ -- (GET) Lists all existing books                                                                   
-http://127.0.0.1:8000/api/authors/1/ -- (GET) To retrieve the details of existing author using author_id                       
+http://127.0.0.1:8000/api/authors/1/ -- (GET) To retrieve the details of existing author using author_id      
+
+RESPONSE 
+
+"POST /api/authors/ HTTP/1.1" 201 Created                                            
+"GET /api/books/ HTTP/1.1" 200 OK                                                        
+"GET /api/authors/1/ HTTP/1.1" 200 OK                                   
+
+If an author attempts to have more than 5 books, the response will be:                                                                       
+
+"POST /api/books/ HTTP/1.1" 400 Bad Request                                                                                               
+{                                                                                                       
+    "error": "Author cannot have more than 5 books."                                                                 
+}                                                                                                                               
+
+
+
 
 
