@@ -26,12 +26,12 @@ Access the API endpoints:
 
 Create New author: POST /api/authors/                                                                        
 List All authors: GET /api/authors/                                                                                      
-Retrieve details of a specific author by ID: GET /api/authors/<int:id>/
+Retrieve details of a specific author by ID: GET /api/authors/<<int:id>>/
 
 
 Create New book: POST /api/books/                                                                               
 List All books: GET /api/books/                                                                                       
-Retrieve details of a specific book by ID: GET /api/books/<int:id>/                                                                    
+Retrieve details of a specific book by ID: GET /api/books/<<int:id>>/                                                                    
 
 SAMPLE API
 
